@@ -1,0 +1,61 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment4</h1>
+    </head>
+<body bgcolor="DarkCyan">
+  <script>
+      document.write("open console box for output");
+      var no1,no2,res;
+      var ans;
+      var ch;
+      do
+      {
+          console.log("Addition-: +");
+          console.log("Subtraction-: -");
+          console.log("Multiplication-: *");
+          console.log("Division-: /");
+          console.log("Square root-: Sq");
+          console.log("percentage-: %");
+          ch=prompt("enter the choice");
+          console.log(ch);
+          switch (ch) 
+          {
+              case '+':no1=+prompt("enter no1");
+                       no2=+prompt("enter no2");
+                       res=no1 + no2;
+                       console.log("The adition of two no = ",res);
+                       break;
+              case '-':no1=+prompt("enter no1");
+                       no2=+prompt("enter no2");
+                       res=no1 - no2;
+                       console.log("The subtraction of two no = ",res);
+                       break; 
+             case '*':no1=+prompt("enter no1");
+                       no2=+prompt("enter no2");
+                       res=no1 * no2;
+                       console.log("The multiplication of two no = ",res);
+                       break;  
+             case '/':no1=+prompt("enter no1");
+                       no2=+prompt("enter no2");
+                       res=no1 / no2;
+                       console.log("The Division of two no = ",res);
+                       break;
+             case 'sq':no1=+prompt("enter no");
+                       //no2=prompt("enter no2");
+                       res=Math.sqrt(no1);
+                       console.log("The sqrt of 1st no = ",res);
+                       break;  
+
+            case '%':let total=+prompt("enter total");  
+                      let no=+prompt("Enter value out  total");
+                         res=(no*100)/total;
+                         console.log("The percentage of no= "+res+"%");
+                         break;
+            default:console.log("Entered wrong choice");                                                
+          }
+          ans=+prompt("do you want to continue");
+          }while(ans==1);
+          </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment1</h1>
+    </head>
+<body bgcolor="DarkOrange">
+<script>
+      document.write("open console box to see ouput");
+       
+       var arr=[];
+       var i;
+       var n=prompt("enter no of elemnts user want to input");
+         for(i=0;i<n;i++)
+         {
+         arr[i]=prompt("enter a positive no");
+         }
+         var numbers=arr.map((el)=>el);
+         console.log("array of positive numbers= ",numbers);
+         var oddno=arr.filter(function(el)
+         {
+             if(el%2!=0)
+             {
+                 return el;
+             }
+         })
+         console.log("array of odd nos= ",oddno);
+         var cubes=oddno.map(el=>el**3);
+         console.log("The array of cubes of add no = ",cubes);
+    </script>
+</body>
+</html>

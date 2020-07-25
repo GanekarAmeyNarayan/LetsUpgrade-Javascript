@@ -1,0 +1,18 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment8</h1>
+    </head>
+<body bgcolor="GhostWhite">
+  <script>
+      document.write("open console box for output");
+        function ask(question,yes,no) 
+        { 
+            if (confirm(question)) yes()
+            else no();
+             
+        }
+        ask("Do you agree?",() => alert("You agreed."),() => alert("you cancelled the execution."));
+        </script>
+</body>
+</html>

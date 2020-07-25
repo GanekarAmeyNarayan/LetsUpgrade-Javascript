@@ -1,0 +1,28 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment3</h1>
+    </head>
+<body bgcolor="DarkOrange">
+<script>
+      document.write("open console box to see ouput");
+      fetch(`https://jsonplaceholder.typicode.com/todos`,{
+
+      })
+      .then(response=>response.json())
+          .then(data=>console.log(data))
+           let obj=
+           {
+        userId: 1,
+        id: 17,
+        title: "quo laboriosam deleniti aut qui",
+       }
+       fetch(`https://jsonplaceholder.typicode.com/posts`,{
+           method:`post`,
+           body:JSON.stringify(obj)
+       })
+       .then(response=>response.json())
+       .then(data=>console.log(data))
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2(day 2)</title>
+</head>
+<body>
+    <script>
+        let sample="hello people i am learning lets upgrade come join me will have fun and grow together";
+        let sample2="it consist of many free online courses for youths and have alot informative sessionswill get to learn more";
+        console.log(sample);
+        //returns lenths of string
+        document.write("functions of strings"); 
+        console.log(sample.length);
+        document.write("1)charAt()=returns the character at specifed index");
+        console.log(sample.charAt(10));
+        document.write(`<br/>2)concat()=it joins two or more strings and form and returns new string`);
+        console.log(sample.concat(sample2));
+        document.write("<br/>3)endsWith()=this checks that the string is ended with the specified word or character");
+        console.log(sample2.endsWith("more"));
+        document.write("<br/>4)indexOf()=returnsthe position of first found occurance of specified string");
+        console.log(sample.indexOf('i'));
+        // <h2>remaining methods</h2>
+        document.write("<br/>5)includes()=it checks whether string contains specified string or character");
+        console.log(sample.includes('cloud'));
+        document.write("<br/>6)search()=it search the string of specified value and returns position of the match");
+        console.log(sample.search("me"));
+        document.write("<br/>7)slice()=it extracts the part of string and returns the extracted part in new string");
+        console.log(sample2.slice(0,10));
+        document.write("<br/>8)substring()=the silce() and substring are similar but substring cannot accept negative indices");
+        console.log(sample.substring(10,15));
+        document.write("<br/>9)substr()=it is similar to slice() and the second parameter specifies the length of extracted part");
+        console.log(sample.substr(1,6));
+        document.write("<br/>10)replace()=methods replace a specified value with another value in a string");
+        console.log("hello","good morning");
+        document.write("<br/>11)trim()=this method removes whitespace from both sides of string");
+        console.log(sample.trim());
+        document.write("<br/>12)split()=it splits anystring by specified sign");
+        console.log(sample.split(","));
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("<br/>");
+        documrnt.write("functions of arrays");
+        document.write("<br/>");
+        let arr=['banana','orange','apple','mango'];
+        let arr2=['coconut','jamun'];
+        console.log(arr.length);
+        document.write("<br/>13)arr[]=it returns the value at given specified index");
+        console.log(arr[2]);
+        console.log(arr instanceof Array);
+    </script>
+</body>
+</html>

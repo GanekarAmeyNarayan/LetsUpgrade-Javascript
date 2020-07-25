@@ -1,0 +1,30 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment7</h1>
+    </head>
+<body bgcolor="DarkSlateBlue">
+  <script>
+      document.write("open console box for output");
+      var n=+prompt("enter n");
+      //var flag=true;
+      var i,j;
+      for(i=2;i<=n;i++)
+      {
+         var count=0;
+          for(j=i;j>=1;j--)
+          {
+              if(i%j==0)
+              {
+                  count=count+1;
+              }
+          }
+          if(count==2)
+          {
+              console.log(i);
+          }
+          
+      }
+      </script>
+</body>
+</html>

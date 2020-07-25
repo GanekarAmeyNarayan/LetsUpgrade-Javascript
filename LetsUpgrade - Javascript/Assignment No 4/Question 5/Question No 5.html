@@ -1,0 +1,35 @@
+  
+<html>
+    <head>
+          <title>Javascript</title>
+         <h1>Assignment5</h1>
+        </head>
+    <body bgcolor="DarkSlateBlue">
+      <script>
+          document.write("open console box for output");
+          var no=+prompt("enter your sales");
+          var reward;
+          if(no>=0 && no<=5000)
+          {
+            reward=no*0.02;
+            console.log("Your reward for 2% sales = ",reward);
+          }
+          else if(no>=5001 && no<=10000)
+          {
+              reward=no*0.05;
+              console.log("Your reward for 5% sales = ",reward);
+          }
+          else if(no>=10001 && no<=20000)
+          {
+              reward=no*0.07;
+              console.log("Your reward for 7% sales = ",reward);
+          }
+          else
+          {
+             reward=no*0.1;
+             console.log("Your reward for 10% sales  = ",reward);
+          }
+    
+    </script>
+    </body>
+    </html>

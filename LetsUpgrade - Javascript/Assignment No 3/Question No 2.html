@@ -1,0 +1,22 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment2</h1>
+    </head>
+<body bgcolor="Aquamarine">
+  <script>
+      document.write("Open console box of windows for output");
+      let os=prompt("Enter the OS and Version");
+      console.log(os);
+      var i;
+      for(i=0;i<os.length;i++)
+      {
+        if(os.charAt(i)==" ")
+        {
+          console.log("The OS name is "+os.substring(0,i)+" and Version is "+os.substring(i+1));
+          break;
+         }
+      }
+  </script>
+</body>
+</html>

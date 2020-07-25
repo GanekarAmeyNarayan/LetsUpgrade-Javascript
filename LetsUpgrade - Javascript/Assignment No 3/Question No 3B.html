@@ -1,0 +1,44 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment3B</h1>
+    </head>
+<body bgcolor="Beige">
+  <script>
+      document.write("Open console box of windows for output");
+      var marks=prompt("Enter the marks out of 60");
+      console.log(marks);
+      var ch;
+      ch=prompt("Enter the choice");
+     // console.log(ch);
+      switch (ch)
+       {
+          case 'A' :if(marks>50 && marks<=60)
+                 {
+                  console.log("Marks are "+marks+" and grade is A");
+                 }
+                break;
+          case 'B':      
+                   if(marks>40 && marks<=50)
+                 {
+                    console.log("Marks are "+marks+" and grade is B");
+                 }
+                break;
+          case 'C':
+                    if(marks>30 && marks<=40)
+                 {
+                  console.log("Marks are "+marks+" and grade is C");
+                 }
+                break;   
+          case 'D':
+                   if(marks>20 && marks<=30)
+                 {
+                  console.log("Marks are "+marks+" and grade is D");
+                 }
+                break;         
+          default:console.log("Fail");
+        
+      }
+    </script>
+</body>
+</html>

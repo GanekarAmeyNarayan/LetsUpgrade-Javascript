@@ -1,0 +1,69 @@
+<html>
+<head>
+      <title>Javascript</title>
+     <h1>Assignment2</h1>
+    </head>
+<body bgcolor="DarkSeaGreen">
+<script>
+      document.write("open console box to see ouput");
+        class User
+        {
+            constructor(name,age,email)
+            {
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.courses=[];
+            }
+            login()
+            {
+                console.log(this.name+" has logged in succesfully");
+                return this;
+            }
+            logout()
+            {
+                console.log(this.name+" has logged out succesfully");
+                return this;
+            }
+        }
+        var coins=0;
+        class Moderator extends User
+        {
+         
+            addcoins()
+            {
+                coins++;
+                console.log(this.name+" has succesfully added "+this.coins+" coins");
+                  return this;
+            }
+            
+            removecoins()
+            {
+                coins--;
+                console.log(this.name+" has succesfully removed "+this.coins+" coins");
+                return this;
+            }
+        }
+        class Admin extends Moderator
+        {
+            addcourse(user,course)
+            {
+                user.courses.push(course);
+                console.log(user);
+            }
+        }
+        let user1=new User("Amey",19,"ameyganekar0404@gmail.com");
+        let user2=new User("Narayan",20,"narayan@gmail.com");
+        user1.login().logout();
+        user2.login().logout();
+        let mod=new Moderator("Ganekar",21,"Ganekar@yahoo.com");
+        let ad=new Admin("Om",25,"Om@gmail.com");
+        let users=[user1,user2,mod,ad];
+           users.forEach(element => {
+               console.log(element);
+                });
+                ad.addcourse(user1,"python");
+                ad.addcourse(user2,"javascript");
+</script>
+</body>
+</html>
